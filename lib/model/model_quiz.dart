@@ -1,9 +1,9 @@
 class Quiz {
-  String? title;
-  List<String>? candidates;
-  int? answer;
+  String title;
+  List<String> candidates;
+  int answer;
 
-  Quiz({this.title, this.candidates, this.answer});
+  Quiz({required this.title, required this.candidates, required this.answer});
 
   Quiz.fromMap(Map<String, dynamic> map)
       : title = map['title'],
